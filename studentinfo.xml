@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='style.css'?>
+
+<studentdata>
+
+    <student>
+        <usn>1BG22CS138</usn>
+        <name>Sam</name>
+        <mobile>9876545678</mobile>
+        <email>Sam@gmail.com</email>
+    </student>
+
+    <student>
+        <usn>1BG22CS156</usn>
+        <name>Sourav</name>
+        <mobile>6363683090</mobile>
+        <email>Sourav@gmail.com</email>
+    </student>
+
+    <student>
+        <usn>1BG22CS162</usn>
+        <name>Suhas</name>
+        <mobile>9098786756</mobile>
+        <email>Suhas@gmail.com</email>
+    </student>
+
+    <student>
+        <usn>1BG22CS165</usn>
+        <name>Shravan</name>
+        <mobile>9876543210</mobile>
+        <email>Shravan@gmail.com</email>
+    </student>
+
+</studentdata>

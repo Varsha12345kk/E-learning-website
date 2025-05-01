@@ -1,0 +1,24 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fullname = htmlspecialchars($_POST['fullname']);
+    $email = htmlspecialchars($_POST['email']);
+    $username = htmlspecialchars($_POST['username']);
+    $password = htmlspecialchars($_POST['password']);
+    $confirm_password = htmlspecialchars($_POST['confirm_password']);
+
+    if ($password !== $confirm_password) {
+        header("Location: login.html?error=2");
+        exit();
+    }
+
+    // Path to the file containing the credentials
+    $file = 'credentials.txt';
+
+    // Store the new credentials
+    $new_credential = "$username:$password\n";
+    file_put_contents($file, $new_credential, FILE_APPEND);
+
+    header("Location: login.html?success=1");
+    exit();
+}
+?>
